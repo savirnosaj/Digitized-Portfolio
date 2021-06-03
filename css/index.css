@@ -1,0 +1,250 @@
+/* Cascade Style Sheet */
+
+/* Global */
+body, html {
+    font-family: Raleway, Helvetica, sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#wrapper {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* First Section */
+.first-innerWrapper {
+    height: 600px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+}
+.inner {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    margin: 0 auto;
+    width: auto;
+}
+.content {
+    width: 35%;
+    padding-left: 25px;
+}
+/*  */
+.home-photo {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    -webkit-filter: contrast(180%);
+    filter: contrast(180%);
+}
+.first-title {
+    font-size: 3.5em;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.025em;
+    color: #5b5b5b;
+}
+.first-message {
+    font-size: 1.45em;
+    font-weight: 100;
+    line-height: 1.55;
+    color: #a4a4a4;
+}
+/* End */
+
+/* Second Section */
+.second-innerWrapper {
+    display: flex;
+    padding: 4em 3em 2em 3em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f7f7f7;
+}
+.inner-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.second-title {font-size: 2.25em;color: #5b5b5b;font-weight: 100;}
+.second-message {font-size: 1.25em;color: #5b5b5b;font-weight: 100;}
+.new-content {
+    width: 45%;
+    padding-left: 0px;
+    text-align: center;
+}
+/* Full-Screen Menu */
+.full-screen-menu {width: 90%;margin: auto;min-height: 105px;}
+/* Style tab links */
+.tablink {background-color: #5b5b5b;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;font-size: 17px;width: 50%;height: 85px;}
+.tablink:hover {background-color: #a4a4a4;}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {color: white;display: none;padding: 0 20px;letter-spacing: 0.025em;font-weight: 300;line-height: 1.75;}
+#Contact {background-color: #000d;}
+#About {background-color: #000d;}
+.p-message {color: #5b5b5b;margin: 0 0 2em 0;letter-spacing: 0.025em;font-weight: 300;line-height: 1.75}
+/* End */
+
+/* Third Section */
+.third-innerWrapper {
+    display: flex;
+    padding: 4em 3em 2em 3em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+}
+.inner-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.spotlight {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: left;
+    margin: 1em 0;
+    width: 100%;
+}
+.pq-message {text-align: center;color: #5b5b5b;margin: 0 0 2em 0;letter-spacing: 0.025em;font-weight: 300;line-height: 1.75;}
+.spotlight > .image {width: 50%;}
+.spotlight .image img {width: 100%;border-radius: 0.5rem;display: block;-webkit-filter: contrast(180%);filter: contrast(105%);}
+.spotlight > .content {width: 50%;}
+.spotlight-photo {
+    border-radius: 0.5rem;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+.third-title {font-size: 1.65em;color: #5b5b5b;font-weight: 100;}
+.third-message {font-size: 1.2em;color: #5b5b5b;font-weight: 100;}
+
+/* Media Queries */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* First Section */
+    .home-photo {
+        height: 250px;
+        width: 250px;
+    }
+    .content {
+        width: 40%;
+    }
+    .first-title {
+        font-size: 3em;
+    }
+    .first-message {
+        font-size: 1.35em;
+    }
+    /* Third Section */
+    .spotlight {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border-bottom: 5px solid;
+    }
+    .spotlight > .image {width: 85%;}
+    .spotlight > .content {width: 85%;margin: 1.5em 0;}
+    .new-content {
+        width: 65%;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* First Section */
+    .inner {
+        display: flex;
+        padding: 5em 0;
+        flex-direction: column;
+    }
+    .content {
+        width: 65%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .home-photo {
+        height: 200px;
+        width: 200px;
+    }
+    .first-title {
+        line-height: 1.5;
+        font-size: 2.5em;
+        margin: 0;
+    }
+    .first-message {
+        font-size: 1.25em;
+    }
+    /* Second Section */
+    .full-screen-menu {width: 100%;}
+
+    /* Third Section */
+    .spotlight {
+        border-bottom: 3px solid;
+    }
+    .spotlight > .content {width: 90%;}
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* First Section */
+    .content {
+        width: 90%;
+    }
+    .first-title {
+        line-height: 1.8;
+    }
+    .home-photo {
+        height: 175px;
+        width: 175px;
+    }
+    /* Second Section */
+    .second-innerWrapper {
+        display: flex;
+        padding: 4em 1.5em 2em 1.5em;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #f7f7f7;
+    }
+    /* Third Section */
+    .spotlight > .image {width: 90%;}
+    .third-title {font-size: 1.55em;color: #5b5b5b;font-weight: 100;}
+    .third-message {font-size: 1.15em;color: #5b5b5b;font-weight: 100;}
+    .pq-message {text-align: center;color: #5b5b5b;margin: 0 0 2em 0;letter-spacing: 0.025em;font-weight: 300;line-height: 1.75;}
+}
+@media (max-width: 378.98px) {
+    .spotlight > .content {width: 100%;}
+    .third-title {font-size: 1.45em;}
+    .new-content {
+        width: 100%;
+    }
+    .spotlight > .image {width: 100%;}
+}

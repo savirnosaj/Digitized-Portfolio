@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Index CSS -->
+        <link rel="stylesheet" href="css/projects.css">
+        <!-- Nav-Bar CSS -->
+        <link rel="stylesheet" href="css/navbar.css">
+        <!-- Footer CSS -->
+        <link rel="stylesheet" href="css/footer.css">
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <!-- Title -->
+        <title>Project - Jason Rivas</title>
+        <!-- Internal CSS -->
+        <style>
+            body {font-family: Raleway, Helvetica, sans-serif;}
+            .form-control {line-height: 2.5;}
+            .container {padding-left: 0;padding-right: 0;}
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-content" style="text-align:center"><br>
+                <header>
+                    <p class="nav-title">Menu</p>
+                </header>
+            </div>
+            <div class="overlay-content">
+                <a href="index.html" onclick="closeNav()">Home</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="projects.html" onclick="closeNav()">Projects</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="#footer-sec" onclick="closeNav()">E-Mail</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+            </div><br><br>
+        </div>
+        <nav class="justify-content-end ml-auto">
+            <div class="nav-button-holder" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <!--  -->
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 50px;text-align: justify;">
+            </div>
+        </div>
+        <!-- Projects container -->
+        <div class="projects-container">
+            <!-- Background -->
+            <h2 style="text-align:center">Projects Page -</h2>
+            <p style="text-align:center"><strong>this list will get longer as time passes.</strong></p>
+            <div class="projects-background">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                <table id="myTable">
+                    <tr class="header">
+                        <th style="width:60%;">Projects</th>
+                        <th style="width:40%;">Technology</th>
+                    </tr>
+                    <tr>
+                        <td><a href="projects/emproject.html">ErVa Marketing - (Social Media Marketing Group);</a></td>
+                        <td>Python\Django</td>
+                    </tr>
+                    <tr>
+                        <td><a href="projects/sdproject.html">Sportsday Thursday - (Team Managing app);</a></td>
+                        <td>C#\Entity\ASP.NET</td>
+                    </tr>
+                    <tr>
+                        <td><a href="projects/slproject.html">Shopping List - (Basic E-commerce Web-Site);</a></td>
+                        <td>Mongo\Express\Angular\Node</td>
+                    </tr>
+                    <tr>
+                        <td>More coming soon ..</td>
+                        <td>N/A</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!-- Footer Section -->
+        <div class="footer"><br><br>
+            <p><strong>Linkedin</strong> | <strong>Github</strong> | <strong>Email</strong> | <strong>Instagram</strong></p>
+            <a href="https://www.linkedin.com/in/savirnosaj/"><i style="color:#fff" class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/savirnosaj"><i style="color:#fff" class="fab fa-github fa-2x"></i></a>
+            <a href="mailto:jason.rivas@bellevuecollege.edu"><i style="color:#ffffff;" class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/savir_nosaj/?hl=en"><i style="color:#fff" class="fab fa-instagram fa-2x"></i></a>
+            <a style="color:#007bff;" href="#top"><p class="top-scroll" style="margin-top:25px;"><strong></strong></p></a>
+        </div>
+        <!-- Javascript -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Index CSS -->
+        <link rel="stylesheet" href="../css/project.css">
+        <!-- Nav-Bar CSS -->
+        <link rel="stylesheet" href="../css/navbar.css">
+        <!-- Footer CSS -->
+        <link rel="stylesheet" href="../css/footer.css">
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <!-- Title -->
+        <title>Project - Jason Rivas</title>
+        <!-- Internal CSS -->
+        <style>
+            body {font-family: Raleway, Helvetica, sans-serif;}
+            .form-control {line-height: 2.5;}
+            .container {padding-left: 0;padding-right: 0;}
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-content" style="text-align:center"><br>
+                <header>
+                    <p class="nav-title">Menu</p>
+                </header>
+            </div>
+            <div class="overlay-content">
+                <a href="../index.html" onclick="closeNav()">Home</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="../projects.html" onclick="closeNav()">Projects</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="#footer-sec" onclick="closeNav()">E-Mail</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+            </div><br><br>
+        </div>
+        <nav class="justify-content-end ml-auto">
+            <div class="nav-button-holder" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <!--  -->
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 50px;text-align: justify;">
+            </div>
+        </div><hr>
+        <!-- Home Section -->
+        <div class="container">
+            <!-- Slideshow container -->
+            <h2 style="text-align:center">Shopping List - </h2>
+            <p style="padding-left:15px;"><strong>Language(s)</strong>: Javascript, Typescript, HTML</p>
+            <p style="padding-left:15px;"><strong>Framework(s)</strong>: Bootstrap, Angular, Node</p>
+            <p style="padding-left:15px;"><strong>Summary</strong>: Basic E-Commerce web-site built using the MEAN stack.</p>
+            <p style="padding-left:15px;"><strong>Functionality</strong>: User can add an item to list; edit or delete an item.</p>    
+            <hr>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../img/slproject-image-1.PNG" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../img/slproject-image-2.PNG" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../img/slproject-image-3.PNG" style="width:100%">
+                </div>
+                    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+    
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/slproject-image-1.PNG" style="width:100%" onclick="currentSlide(1)" alt="ErVa Marketing Home Page">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/slproject-image-2.PNG" style="width:100%" onclick="currentSlide(2)" alt="Blog Feature incorporated">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/slproject-image-3.PNG" style="width:100%" onclick="currentSlide(3)" alt="Billing page with PayPal">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--  -->
+        <section id="footer-sec" class="fourth-innerWrapper">
+            <div class="container">
+                <div class="inner-four">
+                    <div class="footer-section">
+                        <!--  -->
+                        <form action="mailto:jason.rivas@bellevuecollege.edu" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Text-Area"></textarea>
+                            </div>
+                            <input class="btn btn-success" type="submit" value="Send">
+                            <input class="btn btn-danger" type="reset" value="Reset">
+                        </form>
+                        <!--  -->
+                        <div class="footer-content">
+                            <header>
+                                <h1 class="third-title">Send me an E-Mail !</h1>
+                                <p class="third-message">Let's have a conversation or disscuss any relevant matter. I need to get better at replying to E-Mails, so help me out.</p>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <p class="p-message" style="font-size:1.5em;font-weight:700;margin: 0;">Thank You</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <div class="footer"><br><br>
+            <p><strong>Linkedin</strong> | <strong>Github</strong> | <strong>Email</strong> | <strong>Instagram</strong></p>
+            <a href="https://www.linkedin.com/in/savirnosaj/"><i style="color:#fff" class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/savirnosaj"><i style="color:#fff" class="fab fa-github fa-2x"></i></a>
+            <a href="mailto:jason.rivas@bellevuecollege.edu"><i style="color:#ffffff;" class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/savir_nosaj/?hl=en"><i style="color:#fff" class="fab fa-instagram fa-2x"></i></a>
+            <a style="color:#007bff;" href="#top"><p class="top-scroll" style="margin-top:25px;"><strong>Return to Top</strong></p></a>
+        </div>
+        <!-- Javascript -->
+        <script src="../js/index.js"></script>
+        <script src="../js/project.js"></script>
+    </body>
+</html>

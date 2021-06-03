@@ -1,0 +1,250 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Index CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <!-- Nav-Bar CSS -->
+        <link rel="stylesheet" href="css/navbar.css">
+        <!-- Footer CSS -->
+        <link rel="stylesheet" href="css/footer.css">
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <!-- Title -->
+        <title>Portfolio - Jason Rivas</title>
+        <!-- Internal CSS -->
+        <style>
+            body {font-family: Raleway, Helvetica, sans-serif;}
+            .form-control {line-height: 2.5;}
+            .container {padding-left: 0;padding-right: 0;}
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-content" style="text-align:center"><br>
+                <header>
+                    <p class="nav-title">Menu</p>
+                </header>
+            </div>
+            <div class="overlay-content">
+                <a href="#top" onclick="closeNav()">Home</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="#information-sec" onclick="closeNav()">About</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="#project-sec" onclick="closeNav()">Projects</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+                <a href="#footer-sec" onclick="closeNav()">E-Mail</a><hr width="25%" style="border-top: 1px solid rgba(255, 255, 255, 0.1);margin-top:0.3em;margin-bottom:0.3em;">
+            </div><br><br>
+            <div style="text-align:center">
+                <button type="button" class="btn btn-primary" onclick="closeNav()">Get Started</button>
+            </div>
+        </div>
+        <nav class="justify-content-end ml-auto">
+            <div class="nav-button-holder" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <div id="wrapper">
+            <!--  -->
+            <section id="intro" class="first-innerWrapper">
+                <div class="inner">
+                    <span class="image">
+                        <img src="img/first-photo.jpg" class="home-photo" alt="Home-Photo">
+                    </span>
+                    <div class="content">
+                        <header>
+                            <h1 class="first-title">Hello,</h1>
+                            <p class="first-message">My name is Jason Rivas and I'm a software developer in Seattle WA. I make web applications for clients and small businesses.</p>
+                        </header>
+                        <footer>
+                            <a href="#information-sec"><button type="button" class="btn btn-primary">Explore</button></a>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <div style="position:relative;">
+                <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 50px;text-align: justify;">
+                    <p>"Great minds discuss ideas; average minds discuss events; small minds discuss people." - Eleanor Roosevelt.</p>
+                    <!-- <p><strong><a href="#section2">Next</a></strong></p> -->
+                </div>
+            </div>
+            <section id="information-sec" class="second-innerWrapper">
+                <div class="container">
+                    <div class="inner-two">
+                        <div class="new-content">
+                            <header>
+                                <h1 class="second-title">Information</h1>
+                                <p class="second-message">Click a box to dropdown</p>
+                            </header>
+                        </div>
+                        <section class="full-screen-menu">
+                            <button class="tablink" onclick="openPage('Contact', this, '#292b2c')">Contact</button>
+                            <button class="tablink" onclick="openPage('About', this, '#292b2c')">About</button>
+                            <div id="Contact" class="tabcontent">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <h3 style="color:#007bff;"><strong>Get in Touch!</strong></h3>
+                                <p>* Get in touch with me. I would love to talk to you about any relevant matter.</p>
+                                <p>* If you have any piece of technology you are interested in developing, I would love to work with you on it!</p>
+                                <p>* At the bottom of the page, there is a form. Send me an E-Mail.</p>
+                                <p><strong>Mobile: (206) 473-2756</strong></p>
+                                <p><strong>E-Mail: jason.rivas@bellevuecollege.edu</strong></p><br>
+                            </div>
+                            <div id="About" class="tabcontent">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <h4 style="color:#007bff;"><strong>Recent Activity (17/18)</strong></h4>
+                                <p>* Attended Coding Dojo; March-June Cohort</p>
+                                <p>* Game Development using Unity3D.</p>
+                                <p>* Intern at <a href="http://anticipateventures.com/">Anticipate Ventures</a>; Web-Development</p>
+                                <p>* Attending Bellevue College, pursuing AS in CS.</p>
+                                <p>* Spend +50 hours weekly strengthing my Programming skills.</p>
+                                <p>* Nearly completing a website for a small startup company.</p>
+                                <p>* Mobile App Development (Game) using the Android Studio IDE</p>
+                                <p>* Learning how to build Machine/Deep Learning applications using Python and other ML libraries.</p>
+                                <hr>
+                                <h4 style="color:#007bff;"><strong>Technical Skills</strong></h4>
+                                <p><strong>Languages:</strong> Java, Javascript, Python, C#, HTML, CSS, Bootstrap</p>
+                                <p><strong>Frameworks:</strong> AngularJS, Express.js, Socket.io, Django, Flask, MVC, Entity</p>
+                                <p><strong>Databases:</strong> MySQL, NoSQL, MongoDB</p>
+                                <p><strong>Other:</strong> Github, node.js, SQL</p>
+                                <a style="font-size:1.5em;color:#fff;text-align:center;" href="img/Jason_Rivas_Resume_2018.pdf"><p class="p-tag"><i class="fa fa-user-circle" aria-hidden="true"> Resume (PDF)</i></p></a><br>
+                            </div>
+                        </section><br><br>
+                        <!--  -->
+                    </div>
+                    <p class="p-message">"These are exciting times now that I'm taking my programming skills to the next level; this has opened my eyes, opened a door full of possibilites. I have developed a hobby of learning how to use different technologies and my life seems to revolve around this.. for now. I'll be sure to update contact info and publish this section as it will continue to change."</p>
+                </div>
+            </section>
+            <!--  -->
+            <div style="position:relative;">
+                <div style="color:#ddd;background-color:#282E34;text-align:right;padding:20px 50px;">
+                    <p>“It doesn't matter you were born as Legend, but what does matter is Legendary End. Think About It.” - Bruce Lee.</p>
+                    <!-- <p><strong><a href="#section2">Next</a></strong></p> -->
+                </div>
+            </div>
+            <!-- Projects Section -->
+            <section id="project-sec" class="third-innerWrapper">
+                <div class="container">
+                    <div class="inner-three">
+                        <div class="new-content">
+                            <header>
+                                <h1 class="second-title"><a href="projects.html">Projects</a></h1>
+                                <p class="second-message">This list will go on and on as time passes</p>
+                            </header>
+                        </div>
+                        <!--  -->
+                        <div class="spotlight">
+                            <span class="image">
+                                <img src="img/emproject-image-06.PNG" class="spotlight-photo" alt="Blog-Section-Photo">
+                            </span>
+                            <div class="content">
+                                <header>
+                                    <h1 class="third-title">ErVa Marketing - (Social Media Marketing Group);</h1>
+                                    <p class="third-message">I am building a full stack web application for a client for their small company. I personally sit down with them and we discuss what features are needed..</p>
+                                </header>
+                                <footer>
+                                    <a href="projects/emproject.html"><button type="button" class="btn btn-info">Details</button></a>
+                                </footer>
+                            </div>
+                        </div><hr>
+                        <!--  -->
+                        <div class="spotlight">
+                            <div class="content">
+                                <header>
+                                    <h1 class="third-title">Sportsday Thursday - (Team Managing app);</h1>
+                                    <p class="third-message">When I was a student at the Coding Dojo, we attended a sportsday that was held every thursday. The number of people attending kept decreasing every week. I wanted to create an app that would inspire people ..</p>
+                                </header>
+                                <footer>
+                                    <a href="./projects/sdproject.html"><button type="button" class="btn btn-info">Details</button></a>
+                                </footer>
+                            </div>
+                            <span class="image">
+                                <img src="img/sdproject-image-01.PNG" class="spotlight-photo" alt="Home-Section-Photo">
+                            </span><br>
+                        </div><hr>
+                        <!--  -->
+                        <div class="spotlight">
+                            <span class="image">
+                                <img src="img/slproject-image-4.PNG" class="spotlight-photo" alt="Shoppinglist-Photo">
+                            </span>
+                            <div class="content">
+                                <header>
+                                    <h1 class="third-title">Shopping List - (Basic E-commerce Web-Site);</h1>
+                                    <p class="third-message">Basic E-Commerce web-site built using the MEAN stack. This simple project displays my experience using Javascript and the MEAN stack.</p>
+                                </header>
+                                <footer>
+                                    <a href="./projects/slproject.html"><button type="button" class="btn btn-info">Details</button></a>
+                                </footer>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <p class="pq-message">"Stay tuned, I'm working on a couple major projects. Some are in collaboration with companies, peers, and some are personal. I'll be sure to constantly update my portfolio as I complete projects I want to share. I might even start my own start-up in the coming years. Patience !"</p>
+            </div><br>
+            <!--  -->
+            <div style="position:relative;">
+                <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 50px;text-align: justify;">
+                    <p>"If you're a walker, document your accomplishments; you'll soon lose track of them all." - Jason Rivas.</p>
+                    <!-- <p><strong><a href="#section2">Next</a></strong></p> -->
+                </div>
+            </div>
+            <!--  -->
+            <section id="footer-sec" class="fourth-innerWrapper">
+                <div class="container">
+                    <div class="inner-four">
+                        <div class="footer-section">
+                            <!--  -->
+                            <form action="mailto:jason.rivas@bellevuecollege.edu" method="post" enctype="text/plain">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Text-Area"></textarea>
+                                </div>
+                                <input class="btn btn-success" type="submit" value="Send">
+                                <input class="btn btn-danger" type="reset" value="Reset">
+                            </form>
+                            <!--  -->
+                            <div class="footer-content">
+                                <header>
+                                    <h1 class="third-title">Send me an E-Mail !</h1>
+                                    <p class="third-message">Let's have a conversation or disscuss any relevant matter. I need to get better at replying to E-Mails, so help me out.</p>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <p class="p-message" style="font-size:1.5em;font-weight:700;margin: 0;">Thank You</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer Section -->
+        <div class="footer"><br><br>
+            <p><strong>Linkedin</strong> | <strong>Github</strong> | <strong>Email</strong> | <strong>Instagram</strong></p>
+            <a href="https://www.linkedin.com/in/savirnosaj/"><i style="color:#fff" class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/savirnosaj"><i style="color:#fff" class="fab fa-github fa-2x"></i></a>
+            <a href="mailto:jason.rivas@bellevuecollege.edu"><i style="color:#ffffff;" class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/savir_nosaj/?hl=en"><i style="color:#fff" class="fab fa-instagram fa-2x"></i></a>
+            <a style="color:#007bff;" href="#top"><p class="top-scroll" style="margin-top:25px;"><strong>Return to Top</strong></p></a>
+        </div>
+            <!-- Javascript -->
+            <script src="js/index.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+/* Cascade Style Sheet */
+
+/* Navbar */
+nav {height: 70px;width:100%;margin-top:30px;position: absolute;display: flex;align-items: center;}
+.nav-button-holder{
+    height: 65px;
+    z-index: 1;
+    margin-left: -35px;
+    width: 65px;
+    position: fixed;
+    background: #5b5b5b;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-bars {color: #fff;font-size:26px;cursor:pointer;}
+/* Navbar Menu */
+.nav-content {
+  width: 100%;
+  padding-left: 0px;
+  margin-top: 10%;
+}
+.nav-title {font-size: 2em;color: #fff;font-weight: 100;}
+.overlay {height: 100%;width: 0;position: fixed;z-index: 5;top: 0;left: 0;background-color: #565656;overflow-x: hidden;transition: 0.5s;}
+.overlay-content {position: relative;width: 100%;text-align: center;margin-top: 30px;}
+.overlay a {padding: 8px;text-decoration: none;font-size: 20px;color: #fff;display: block;transition: 0.3s;}
+
+.overlay a:hover, .overlay a:focus {color: #f1f1f1;}
+
+.overlay .closebtn {position: absolute;top: 15px;right: 45px;font-size: 55px;}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* End */
+
+/* Media-Quieres */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* Nav-Bar */
+  .nav-button-holder{
+    height: 60px;
+    z-index: 1;
+    margin-left: -35px;
+    width: 60px;
+    position: fixed;
+    background: #5b5b5b;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Nav-Bar */
+  .nav-button-holder{
+    height: 45px;
+    margin-left: -35px;
+    width: 45px;
+  }
+  .fa-bars {color: #fff;font-size:20px;cursor:pointer;}
+}
+
+@media (max-width: 378.98px) {
+  .overlay .closebtn {right: 30px;}
+}
