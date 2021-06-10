@@ -26,7 +26,7 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #fff;
+    background-image: url("../img/background-1.PNG");
 }
 .inner {
     display: inline-flex;
@@ -45,21 +45,19 @@ body, html {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    -webkit-filter: contrast(180%);
-    filter: contrast(180%);
 }
 .first-title {
     font-size: 3.5em;
     line-height: 1.1;
     margin: 0 0 1.5rem 0;
     letter-spacing: 0.025em;
-    color: #5b5b5b;
+    color: #fff;
 }
 .first-message {
     font-size: 1.45em;
     font-weight: 100;
     line-height: 1.55;
-    color: #a4a4a4;
+    color: #fff;
 }
 /* End */
 
